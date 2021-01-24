@@ -1,5 +1,6 @@
 # AzureAD-Management
 Written in PowerShell , this script allows you to do basic administrative tasks on your Azure AD tenant: 
+
 A. USER MANAGEMENT:
   1. Add users
   2. Invite guest users
