@@ -19,7 +19,15 @@ C. MULTIFACTOR AUTHENTICATION
   1. Enable MFA
   2. Disable MFA
   
-Other things to be added later....
+  
+ UPDATE:
+ #001 version contains only User Management section - other settings to be added later :D
+  
+  
+  
+
+
+
 Feel free to give me ideas on what to include :D
 
 All the best,
