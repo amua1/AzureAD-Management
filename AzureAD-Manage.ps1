@@ -54,6 +54,7 @@ $categorysel = Read-Host "
 "
 clear
 
+#main01
 if ($categorysel -eq 1)
 {
     Write-Host "You have choosen the USER MANAGEMENT section - Here you can Add , Delete , Modify and Recover deleted users"
@@ -85,9 +86,42 @@ if ($categorysel -eq 1)
     {
         .\usermanagement\userrestore.ps1
     }
+    else 
+    {
+        Write-Host "Enter a number from the specified options above"
+    }
 }
-#other settings to be added later
+#main01 end
 
+#main02 start
+if ($categorysel -eq 2)
+{
+    Write-Host "You have choosen the GROUP MANAGEMENT section - Here you can Create, Manage and Delete a group"
+    Write-Host "Choose one of the options provided below:"
+    $groupmanagementsel = Read-Host "
+        1. Create a group
+        2. Delete a group
+        3. Manage a group
+"
+
+    if($groupmanagementsel -eq 1)
+    {
+        .\groupmanagement\groupadd.ps1
+    }
+    elseif ($groupmanagementsel -eq 2)
+    {
+        .\groupmanagement\groupdelete.ps1
+    }
+    elseif ($groupmanagementsel -eq 3)
+    {
+        .\groupmanagement\groupmodify.ps1
+    }
+    else
+    {
+        Write-Host "Enter a number from the specified options above"
+    }
+}
+#main02 end
 
 
 }
